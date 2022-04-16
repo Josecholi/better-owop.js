@@ -1033,11 +1033,7 @@
   }
 
   if (isBrowser) {
-    return { // browser
-      install: () => {},
-      uninstall: () => {
-        alert("Refresh page to uninstall.");
-      },
+    window.BOJS = { // browser
       Client,
       ChunkSystem,
       WeirdDataView,
