@@ -805,7 +805,7 @@
       if (this.clientOptions.log) console.log(...args);
     }
     destroy() {
-      if (this.ws.readyState === 1) this.ws.terminate();
+      if (this.ws.readyState === 1) this.ws.close();
       this.destroyed = true;
       this.emit("destroy");
     }
