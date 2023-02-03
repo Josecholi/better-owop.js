@@ -923,6 +923,7 @@
                     if (!this.captcha.login(this.clientOptions.captchaToken)) console.log("login failed token already used");
                   }
                   this.ws.send("secretCaptcha");
+                  setTimeout(() => {}, "10000")
                   break;
                 }
                 case Client.options.captchaState.VERIFYING: {
