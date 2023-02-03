@@ -922,7 +922,7 @@
                     this.log("Trying to login using captcha token");
                     if (!this.captcha.login(this.clientOptions.captchaToken)) console.log("login failed token already used");
                   }
-                  let peepee = await that.captcha.renderCaptcha(unique)
+                  let peepee = that.captcha.renderCaptcha(unique)
                   setTimeout(() => {}, "12000")
                   this.captcha.login(peepee);
                   break;
